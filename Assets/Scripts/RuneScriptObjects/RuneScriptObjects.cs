@@ -7,16 +7,8 @@ namespace Runes
     [CreateAssetMenu]
     public class RuneScriptObjects : ScriptableObject
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+        public Color color;
+        public int ammount;
+        public int rarity;
     }
 }
