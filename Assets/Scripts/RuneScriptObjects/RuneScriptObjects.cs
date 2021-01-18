@@ -10,12 +10,17 @@ namespace Runes
         public Color color;
         public int rarity; // Might be need to made into sepret Tears of the Script Object.
         //WIP Move along
-        /*
+        
         public int ammount
         {
-            get => PlayerPrefs.GetInt(this.name)
+            get => PlayerPrefs.GetInt(this.name, 0);
+            set
+            {
+                PlayerPrefs.SetInt(this.name, value);
+
+            }
         }
-        */
+        
 
     }
 }
