@@ -8,7 +8,14 @@ namespace Runes
     public class RuneScriptObjects : ScriptableObject
     {
         public Color color;
-        public int ammount;
-        public int rarity;
+        public int rarity; // Might be need to made into sepret Tears of the Script Object.
+        //WIP Move along
+        /*
+        public int ammount
+        {
+            get => PlayerPrefs.GetInt(this.name)
+        }
+        */
+
     }
 }
