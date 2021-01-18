@@ -9,10 +9,11 @@
         <e p="Scripts" t="Include">
           <e p="CardBasic.cs" t="Include" />
           <e p="RuneScriptObjects" t="Include">
+            <e p="RuneMerger.cs" t="Include" />
             <e p="RuneScriptObjects.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="PurchaseHandler.cs" t="Include" />
+            <e p="RunePurchase.cs" t="Include" />
           </e>
         </e>
       </e>
