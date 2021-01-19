@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class InventoryObject : S
 {
     // Start is called before the first frame update
@@ -16,3 +16,4 @@ public class InventoryObject : S
         
     }
 }
+*/

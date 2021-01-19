@@ -10,8 +10,8 @@ namespace Runes
         public Color color;
         public int rarity; // Might be need to made into sepret Tears of the Script Object.
         //WIP Move along
-        
-        public int ammount
+        public int changeAmount; //First change this one to how many of this Rune you want to Add or Subtract.
+        public int amount
         {
             get => PlayerPrefs.GetInt(this.name, 0);
             set
@@ -20,7 +20,13 @@ namespace Runes
 
             }
         }
-        
-
+        public void Added() //Then call this funktion to Add
+        {
+            this.amount += this.changeAmount;
+        }
+        public void Consumed() //Or this this funktion to Subtract
+        {
+            this.amount += this.changeAmount;
+        }
     }
 }
