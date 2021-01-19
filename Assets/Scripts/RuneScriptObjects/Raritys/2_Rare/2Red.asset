@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbad7b7b7cf7cc3469b3d9d68daed800, type: 3}
-  m_Name: TestRune
+  m_Name: 2Red
   m_EditorClassIdentifier: 
   name: 
-  color: {r: 1, g: 0, b: 1, a: 1}
+  color: {r: 0, g: 0, b: 0, a: 0}
   changeAmount: 1
   sprite: {fileID: 0}
   rarity: 0
