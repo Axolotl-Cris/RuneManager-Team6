@@ -16,12 +16,14 @@ public class ButtonTestScriptObjects : MonoBehaviour
     public void activatorAdd()
     {
         runeSO.Added();
+        Debug.Log("Name " + runeSO.name);
         Debug.Log("New Amount " + runeSO.amount);
     }
     public void activatorSubtract()
     {
         runeSO.Subtract();
-        Debug.Log("New Amount " + runeSO.amount);
+        Debug.Log("Name " + runeSO.name);
+        Debug.Log("New Amount for " + runeSO.amount);
     }
 
     void Update()

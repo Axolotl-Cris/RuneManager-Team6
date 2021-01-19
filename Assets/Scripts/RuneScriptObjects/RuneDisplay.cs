@@ -9,6 +9,6 @@ using UnityEngine;
         void Start()
         {
             runeSO.PrintTest();
-            Debug.Log(runeSO.name);
+            //Debug.Log(runeSO.name);
         }
     }
