@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
-public class InventoryObject : S
+
+public class RuneMove : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,4 +16,3 @@ public class InventoryObject : S
         
     }
 }
-*/
