@@ -2,24 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardBasic : MonoBehaviour
+[CreateAssetMenu(fileName = "new Rune", menuName = "Common/Uncommon/Rare/Epic/Legendary Rune")]
+public class Rune : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        //CardBasic myNeatCard;
-        //string Health;
-        //string Damage;
-        //string Tier;
-        //DescriptionTag = "CARD_DESCRIBTION";
-        //Effects = new List<CardEffectModel;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public new string Name;
+    public string Icon;
+    public Sprite Artwork;
+    public string Rarity;
 
 
 }
