@@ -30,14 +30,14 @@ using UnityEngine.UI;
         {
             this.amount += this.changeAmount;
         }
-        public void Consumed() //Or this this funktion to Subtract
+        public void Subtract() //Or this this funktion to Subtract
         {
-            this.amount += this.changeAmount;
+            this.amount -= this.changeAmount;
         }
         public void PrintTest()
         {
-            Debug.Log("The Runes Name " + name);
-            Debug.Log("The Runes Current Amount Hold " + amount);
-            Debug.Log("The Runes Colour " + color);
+            Debug.Log("Name " + name);
+            Debug.Log("Current Amount " + amount);
+            Debug.Log("Colour " + color);
         }
     }
