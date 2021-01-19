@@ -7,10 +7,10 @@ public class CardBasic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CardBasic myNeatCard;
-        string Health;
-        string Damage;
-        string Tier;
+        //CardBasic myNeatCard;
+        //string Health;
+        //string Damage;
+        //string Tier;
         //DescriptionTag = "CARD_DESCRIBTION";
         //Effects = new List<CardEffectModel;
     }
