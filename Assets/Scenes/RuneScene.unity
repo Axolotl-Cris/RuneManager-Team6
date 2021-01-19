@@ -2107,6 +2107,7 @@ GameObject:
   - component: {fileID: 1838156759}
   - component: {fileID: 1838156758}
   - component: {fileID: 1838156757}
+  - component: {fileID: 1838156760}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -2195,6 +2196,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1838156760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838156755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a4129ca03bd9a4c83ca57dd2d41e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  purchaseButton: {fileID: 1624673710}
+  allRunes:
+  - {fileID: 11400000, guid: 36eb5b986c84f664095a4ac42ecf4def, type: 2}
+  - {fileID: 11400000, guid: 4be42699dfa58964697c5e047935bd63, type: 2}
+  - {fileID: 11400000, guid: 0968a300ca1ec894dae47eed003960cf, type: 2}
+  - {fileID: 11400000, guid: ed571ad2906c25a4aa3c0ef920774bb8, type: 2}
+  - {fileID: 11400000, guid: 0660179395dee4e419739b9df64206e2, type: 2}
+  - {fileID: 11400000, guid: d5982fe456037504a90d596ce688f6a4, type: 2}
+  - {fileID: 11400000, guid: 68bfd07c1b3488f40ba503b067c9fcd2, type: 2}
+  - {fileID: 11400000, guid: a8024ab47bcc5594698df6b4a2986b48, type: 2}
+  - {fileID: 11400000, guid: 33e2f08ec1c0cfc44a4fbf8398f49e09, type: 2}
+  - {fileID: 11400000, guid: 5cfb8a84193b1314aa107596e1aa4fb8, type: 2}
+  - {fileID: 11400000, guid: ca7e2d5ef14b7d740a29f562e5a56f9b, type: 2}
+  - {fileID: 11400000, guid: fba278ec034f6af42984e97946611cd9, type: 2}
+  - {fileID: 11400000, guid: 3df8e3cd9ec4f4c4c8e39e45b25ea350, type: 2}
+  - {fileID: 11400000, guid: 54d9a7a54e18a6b4d87fa773ba0d6d8e, type: 2}
+  - {fileID: 11400000, guid: 836b9573b5f985a4aa288f6d1520a76a, type: 2}
 --- !u!1 &2021490671
 GameObject:
   m_ObjectHideFlags: 0
