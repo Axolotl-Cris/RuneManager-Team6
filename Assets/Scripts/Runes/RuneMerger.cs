@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
 namespace Runes
 {
+*/
     public class RuneMerger : MonoBehaviour
     {
         //Runes selected ´ro be merged
@@ -20,4 +22,4 @@ namespace Runes
 
         }
     }
-}
+//}
