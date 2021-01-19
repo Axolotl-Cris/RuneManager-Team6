@@ -8,8 +8,12 @@ namespace Runes
     public class RuneScriptObjects : ScriptableObject
     {
         public Color color;
-        public int rarity; // Might be need to made into sepret Tears of the Script Object.
-        //WIP Move along
+        //public int rarity; 
+        // Not in use until I can be sure that the same SO can have different of the same thing (Which I highly think is likeble).
+        // Use the rarity tear list insted of the SO tear list.
+        // You can find it under "Raritys"
+        
+        // WIP Move along
         public int changeAmount; //First change this one to how many of this Rune you want to Add or Subtract.
         public int amount
         {
