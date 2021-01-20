@@ -13,11 +13,14 @@ public class RunePurchase : MonoBehaviour
     
     public Button purchaseButton;
     public RuneScriptObjects[] allRunes;
+    private int maxAmountofCommonRunes = 4;
     public void PurchaseRune()
     {
-        allRunes[Random.Range(0, allRunes.Length)].Added();
-        Debug.Log("Button is working");
-        Debug.Log("You got the rune named: " + allRunes[Random.Range(0, allRunes.Length)]);
+        for (var i = 0; i < maxAmountofCommonRunes; i++)
+        {
+            allRunes[Random.Range(0, allRunes.Length)].Added();
+            Debug.Log("You got the runes named: " + allRunes[Random.Range(0, allRunes.Length)]);
+        }
     }
 
     private void Start()
