@@ -15,6 +15,8 @@ public class RunePurchase : MonoBehaviour
     public RuneScriptObjects[] allRunes;
     private int maxAmountofCommonRunes = 4;
     
+    //private RuneScriptObjects runeScriptableObject;
+
     public void PurchaseRune()
     {
         for (var i = 0; i < maxAmountofCommonRunes; i++)
@@ -23,6 +25,13 @@ public class RunePurchase : MonoBehaviour
             Debug.Log("You got one rune named: " + allRunes[Random.Range(0, allRunes.Length)]);
         }
     }
+
+    /*public void ActivateIcon()
+    {
+        runeScriptableObject.DisplayRuneIcon();
+    }
+    
+    purchaseButton.onClick.AddListener(ActivateIcon); */
 
     private void Start()
     {
