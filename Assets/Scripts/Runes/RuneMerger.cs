@@ -6,7 +6,6 @@ namespace Runes
 {
     public class RuneMerger : MonoBehaviour
     {
-        //Runes selected to be merged
         public List<RuneScriptObjects> SelectedObjects = new List<RuneScriptObjects>();
 
         public void Merge()
@@ -36,11 +35,11 @@ namespace Runes
 
                     break;
             }
+        }
 
-            //TODO: Check selected objetc amount
-            //Check if runes are of same rarity
-            //Check if number is within Merge Range
-            //Return random rune
+        public void ClearRunes()
+        {
+            SelectedObjects.Clear();
         }
 
         private void UpgradeRune(int chance)
