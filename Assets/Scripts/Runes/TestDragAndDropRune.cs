@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class TestDragAndDropRune : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
@@ -30,7 +29,6 @@ public class TestDragAndDropRune : MonoBehaviour, IPointerDownHandler, IBeginDra
     
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("Pointer is dragging");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
