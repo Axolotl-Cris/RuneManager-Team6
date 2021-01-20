@@ -8,9 +8,12 @@ namespace Runes
     {
         public List<RuneScriptObjects> SelectedObjects = new List<RuneScriptObjects>();
 
+        [Space]
+        public List<RuneRarity> RuneRarities = new List<RuneRarity>();
+
         public void Merge()
         {
-            if (SelectedObjects.Count < 2 && IsOfSameRarity(SelectedObjects))
+            if (SelectedObjects.Count < 2 && IsOfSameRarity(SelectedObjects) && SelectedObjects.First().rarity == 4)
             {
                 return;
             }
@@ -44,16 +47,28 @@ namespace Runes
 
         private void UpgradeRune(int chance)
         {
+            RuneScriptObjects rune = SelectedObjects[Random.Range(0, SelectedObjects.Count - 1)];
+
             if (UpgradeChance(chance))
             {
+                RuneScriptObjects upgradedRune;
+
                 Debug.Log($"You upgraded a rune with a {chance} percent chance!");
-            }
-            else
-            {
-                if (!UpgradeChance(chance))
+
+                foreach (var newRune in RuneRarities[rune.rarity + 1].Runes)
                 {
-                    Debug.Log($"You failed to upgrade a rune with a {chance} percent chance!");
+                    if (newRune.color == rune.color)
+                    {
+                        Debug.Log($"You recived an upgraded {newRune.name}");
+                        upgradedRune = newRune;
+                        break;
+                    }
                 }
+            }
+            else if (!UpgradeChance(chance))
+            {
+                Debug.Log($"You failed to upgrade a rune with a {chance} percent chance!");
+                Debug.Log($"You recived a {rune.name}");
             }
         }
 
@@ -82,5 +97,16 @@ namespace Runes
                 return false;
             }
         }
+    }
+
+    [System.Serializable]
+    public class RuneRarity
+    {
+        public string RarityName;
+
+        [Space]
+        public int RarityId;
+
+        public List<RuneScriptObjects> Runes = new List<RuneScriptObjects>();
     }
 }

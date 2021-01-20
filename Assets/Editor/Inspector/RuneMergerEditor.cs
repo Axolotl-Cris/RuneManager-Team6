@@ -11,22 +11,22 @@ public class RuneMergerEditor : Editor
     {
         RuneMerger merger = (RuneMerger)target;
 
+        base.OnInspectorGUI();
+
+        GUILayout.Space(15);
+
         GUILayout.BeginHorizontal();
 
-        if (GUILayout.Button("Merge Runes"))
+        if (GUILayout.Button("Merge Runes", GUILayout.Height(35)))
         {
             merger.Merge();
         }
 
-        if (GUILayout.Button("Clear Selected Runes"))
+        if (GUILayout.Button("Clear Selected Runes", GUILayout.Width(150), GUILayout.Height(35)))
         {
             merger.ClearRunes();
         }
 
         GUILayout.EndHorizontal();
-
-        GUILayout.Space(15);
-
-        base.OnInspectorGUI();
     }
 }
