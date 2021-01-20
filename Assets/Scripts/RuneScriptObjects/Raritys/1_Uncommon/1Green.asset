@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbad7b7b7cf7cc3469b3d9d68daed800, type: 3}
   m_Name: 1Green
   m_EditorClassIdentifier: 
-  name: 
-  color: {r: 0, g: 0, b: 0, a: 0}
+  name: Uncommon Green Rune
+  color: {r: 0, g: 1, b: 0, a: 1}
   changeAmount: 1
   sprite: {fileID: 0}
-  rarity: 0
+  rarity: 1
