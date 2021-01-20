@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0Blue
   m_EditorClassIdentifier: 
   name: Common Blue Rune
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.12646297, g: 0, b: 0.7169812, a: 1}
   changeAmount: 1
-  sprite: {fileID: 0}
+  runeIcon: {fileID: 5534567332156751999, guid: 57ba27cc513994b4786fae836d2e6290, type: 3}
   rarity: 0

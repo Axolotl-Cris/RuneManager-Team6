@@ -27,7 +27,7 @@ public class RuneScriptObjects : ScriptableObject
     // So I first call this one to change the amount that I want to be subtracted to 4.
     // Then calling the ["Subtract()"] (See below on line) to to remove set a rune.
 
-    public Image sprite; 
+    public GameObject runeIcon;
     // The selector in the inspector what sprite should be binded to this specific SO.
     
     public int rarity = 0;
