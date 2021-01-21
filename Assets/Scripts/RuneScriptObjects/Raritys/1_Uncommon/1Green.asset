@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Uncommon Green Rune
   color: {r: 0, g: 1, b: 0, a: 1}
   changeAmount: 1
-  sprite: {fileID: 0}
+  icon: {fileID: 21300000, guid: 145ddd80b4b4f624aa54fa484897f181, type: 3}
   rarity: 1

@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Uncommon Red Rune
   color: {r: 1, g: 0, b: 0, a: 1}
   changeAmount: 1
-  sprite: {fileID: 0}
+  icon: {fileID: 21300000, guid: 351e768bfa5bae8409f383499c7e9a6c, type: 3}
   rarity: 1
