@@ -1,22 +1,23 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
+using UnityEngine.Events;
 
 namespace Runes
 {
     public class RuneMerger : MonoBehaviour
     {
+        [Header("Selected Runes")]
         public List<RuneScriptObjects> SelectedObjects = new List<RuneScriptObjects>();
 
-        [Space]
+        [Header("Runes Sorted by Rarity")]
         public List<RuneRarity> RuneRarities = new List<RuneRarity>();
+
+        [Header("Events")]
+        public UnityEvent OnMerge;
 
         public void Merge()
         {
-            if (SelectedObjects.Count < 2 && IsOfSameRarity(SelectedObjects) && SelectedObjects.First().rarity == 4)
-            {
-                return;
-            }
+            //Check if objects selected are more than one, and is of same rarity and not legendary
 
             switch (SelectedObjects.Count)
             {
@@ -38,6 +39,8 @@ namespace Runes
 
                     break;
             }
+
+            OnMerge.Invoke();
         }
 
         public void ClearRunes()
@@ -74,14 +77,8 @@ namespace Runes
 
         internal bool IsOfSameRarity(List<RuneScriptObjects> selectedRunes)
         {
-            if (selectedRunes.Distinct().Count() == 1)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            //Check Rareties
+            return false;
         }
 
         internal bool UpgradeChance(int percentChance)
